@@ -1,13 +1,255 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@media (max-width: 59.3125em) {
+  .hide-for-mobile {
+    display: none;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (min-width: 59.375rem) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+.header-icon {
+  background-color: #F55A5A;
+  height: 3.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.header-icon img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.header-icon h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: -0.075em;
+  color: #FFFFFF;
+}
+
+.filter-navbar {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #2B283A;
+  width: 90%;
+  max-width: 20.75rem;
+  margin: 1rem auto 0 auto;
+}
+
+@media (min-width: 40em) {
+  .filter-navbar {
+    width: 31.559rem;
+  }
+}
+
+.destinations {
+  padding: 2rem 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.destinations-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3.4564px 3.98256px 7.4564px rgba(0, 0, 0, 0.2);
+          box-shadow: 3.4564px 3.98256px 7.4564px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  padding: 1rem 0.5rem;
+}
+
+@media (min-width: 40em) {
+  .destinations-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.destinations-item-image {
+  width: 9.81rem;
+  height: 13.5644375rem;
+  border-radius: 0.25rem;
+  margin: auto auto 1rem auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 40em) {
+  .destinations-item-image {
+    margin: auto 1rem auto auto;
+  }
+}
+
+.destinations-item-content {
+  max-width: 18.75rem;
+}
+
+@media (min-width: 40em) {
+  .destinations-item-content {
+    max-width: 18.75rem;
+  }
+}
+
+.destinations-item-content .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 40em) {
+  .destinations-item-content .location {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.destinations-item-content .location img {
+  height: 0.896875rem;
+}
+
+.destinations-item-content .location h3 {
+  margin: 0;
+  font-size: 0.896875rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0.75rem;
+  letter-spacing: 0.1em;
+  color: #2B283A;
+  margin-right: 0.5rem;
+}
+
+.destinations-item-content .location a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.896875rem;
+  line-height: 0.75rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #918E9B;
+}
+
+.destinations-item-content .name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  color: #2B283A;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .destinations-item-content .name {
+    text-align: start;
+  }
+}
+
+.destinations-item-content .description {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.896875rem;
+  line-height: 150%;
+  color: #2B283A;
+  text-align: justify;
+  margin: 0;
+  padding-right: 0.5rem;
+  overflow-x: auto;
+}
+
+.destinations-item-content .description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.destinations-item-content .description::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.destinations-item-content .description::-webkit-scrollbar-thumb {
+  background: #F55A5A;
+  border-radius: 10px;
+}
+
+.destinations-item-content .description::-webkit-scrollbar-thumb:hover {
+  background: #fbbaba;
+}
+
+@media (min-width: 40em) {
+  .destinations-item-content .description {
+    max-height: 8.2rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
